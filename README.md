@@ -29,4 +29,6 @@ I'll probably end up saving the ones I'm most familiar with for last, if the cha
 * Python
 * Ruby
 * Elixir
+* Go
+* Rust
 * ...
