@@ -49,11 +49,11 @@ int readInstructions(int * dest, FILE * fp) {
     fclose(fp);
 }
 
-int instructionCalc(int op, int a, int b) {
+int instructionCalc(int * instructions, int op, int a, int b) {
     if(op == 1){
-        return a + b;
+        return instructions[a] + instructions[b];
     } else {
-        return a * b;
+        return instructions[a] * instructions[b];
     }
 }
 
@@ -64,7 +64,7 @@ void processInstructions(int * instructions) {
 
     while(instructions[idx] != -1) {
         dest = instructions[idx + 3];
-        calc = instructionCalc(instructions[idx], instructions[idx+1], instructions[idx+2]);
+        calc = instructionCalc(instructions, instructions[idx], instructions[idx+1], instructions[idx+2]);
         instructions[dest] = calc;
         idx += 4;
     }
