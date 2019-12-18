@@ -21,7 +21,7 @@ I'll probably end up saving the ones I'm most familiar with for last, if the cha
 ## Language Wishlist (in no particular order)
 
 * Haskell ✅
-* C
+* C ✅
 * C++
 * Java
 * Javascript
